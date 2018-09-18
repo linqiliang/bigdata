@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <constant name="struts.enable.DynamicMethodInvocation" value="true"/>
+    <package name="myDefaulte" extends="struts-default" abstract="true">
+        <result-types>
+            <result-type name="captcha" class="com.rcnjtech.action.result.CAPTCHAResult"></result-type>
+        </result-types>
+        <global-results>
+            <result name="success" type="captcha">
+                <param name="width">240</param>
+                <param name="height">40</param>
+            </result>
+        </global-results>
+    </package>
+    <package name="struts" namespace="/" extends="myDefaulte">
+        <!--
+        <action name="hello" class="com.rcnjtech.action.HelloAction" method="sayHello">
+            <result name="success">/success.jsp</result>
+        </action>
+        <action name="action2" class="com.rcnjtech.action.DemoAction">
+            <result name="success">/success.jsp</result>
+        </action>
+        <action name="action3" class="com.rcnjtech.action.Demo3Action">
+            <result name="success">/success.jsp</result>
+        </action>
+
+        <action name="*_*" class="com.rcnjtech.action.{1}Action" method="{1}{2}">
+            <result name="success">/{1}.jsp</result>
+        </action>
+        -->
+
+        <action name="action1" class="com.rcnjtech.action.DemoAction">
+                <result name="success" type="redirectAction">
+                    <param name="namespace">/n2</param>
+                    <param name="actionName">action3</param>
+                </result>
+        </action>
+        <action name="action2">
+            <result name="success">/success.jsp</result>
+        </action>
+        <action name="action4">
+            <result name="success" type="captcha">
+                <param name="width">640</param>
+                <param name="height">60</param>
+            </result>
+        </action>
+    </package>
+    <package name="p2" extends="struts-default" namespace="/n2">
+        <action name="action3">
+            <result name="success">/success3.jsp</result>
+        </action>
+    </package>
+    <package name="p3" extends="myDefaulte">
+        <action name="captchaaction" class="com.rcnjtech.action.CapchaAction" method="getPic">
+            <result name="success" type="captcha">
+                <param name="width">640</param>
+                <param name="height">60</param>
+            </result>
+        </action>
+    </package>
+</struts>

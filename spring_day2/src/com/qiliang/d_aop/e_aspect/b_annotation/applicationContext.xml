@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/aop
+                           http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <!--<bean id="userServiceID" class="com.qiliang.c_inject.g_annotation.UserServiceImpl"></bean>-->
+    <context:component-scan base-package="com.qiliang.d_aop.e_aspect.b_annotation"></context:component-scan>
+    <aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+    <!--
+    <bean id="myBeanFactory" class="com.qiliang.c_inject.c_factory.MyBeanFactory"></bean>
+    <bean id="userService" factory-bean="myBeanFactory" factory-method="createService" scope="singleton"></bean>
+
+    <bean id="userServiceID" class="com.qiliang.d_aop.e_aspect.b_annotation.UserServiceImpl"></bean>
+    <bean id="myAspectID" class="com.qiliang.d_aop.e_aspect.b_annotation.MyAspect"></bean>
+    -->
+    <!--
+    <bean id="proxyServiceID" class="org.springframework.aop.framework.ProxyFactoryBean">
+        <property name="interfaces">
+            <array>
+                <value>
+                    com.qiliang.c_inject.c_factory.UserService
+                </value>
+            </array>
+        </property>
+        <property name="target" ref="userServiceID"></property>
+        <property name="interceptorNames" value="myAspectID"></property>
+        <property name="optimize" value="true"></property>
+    </bean>
+
+    <aop:config>
+        <aop:pointcut expression="execution(* com.qiliang.d_aop.e_aspect.a_xml.UserServiceImpl.*())"
+                      id="myPointCut"></aop:pointcut>
+        <aop:advisor advice-ref="myAspectID" pointcut-ref="myPointCut"></aop:advisor>
+    </aop:config>
+    -->
+    <!--
+    <aop:config>
+        <aop:aspect ref="myAspectID">
+            <aop:pointcut id="myPointCut" expression="execution(* com.qiliang.d_aop.e_aspect.b_annotation.UserServiceImpl.*())"/>
+            <aop:before method="myBefore"  pointcut-ref="myPointCut"/>
+            <aop:after-returning method="myAfterReturning"  pointcut-ref="myPointCut" returning="ret"/>
+            <aop:around method="myAround" pointcut-ref="myPointCut"/>
+            <aop:after-throwing method="myAfterThrowing" pointcut-ref="myPointCut" throwing="e"/>
+            <aop:after method="myAfter" pointcut-ref="myPointCut"/>
+        </aop:aspect>
+
+    </aop:config>
+    -->
+
+</beans>

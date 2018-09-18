@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--
+    <bean id="myBeanFactory" class="com.qiliang.c_inject.e_lifecycle.MyBeanFactory"></bean>
+         -->
+    <bean id="personID" class="com.qiliang.c_inject.f_xml.c_p.Person"
+          p:pname="余泰符" p:page="22" p:homeAddr-ref="homeAddrID" p:companyAddr-ref="companyAddrID">
+    </bean>
+    <bean id="homeAddrID" class="com.qiliang.c_inject.f_xml.c_p.Address"
+          p:addr="DG" p:tel="dongguan">
+    </bean>
+
+    <bean id="companyAddrID" class="com.qiliang.c_inject.f_xml.c_p.Address"
+          p:addr="DG" p:tel="daoguo">
+    </bean>
+</beans>

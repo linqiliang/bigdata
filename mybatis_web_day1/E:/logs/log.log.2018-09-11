@@ -1,0 +1,84 @@
+2018-09-11 21:41:17  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-09-11 21:41:17  [ main:28 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-09-11 21:41:17  [ main:28 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-09-11 21:41:17  [ main:29 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-09-11 21:41:17  [ main:29 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-09-11 21:43:09  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-09-11 21:43:09  [ main:37 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-09-11 21:43:09  [ main:39 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-09-11 21:43:09  [ main:42 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-09-11 21:43:09  [ main:42 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-09-11 21:44:53  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-09-11 21:44:53  [ main:24 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-09-11 21:44:53  [ main:25 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-09-11 21:44:53  [ main:27 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-09-11 21:44:53  [ main:28 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-09-11 21:44:53  [ main:146 ] - [ DEBUG ]  Opening JDBC Connection
+2018-09-11 21:44:53  [ Finalizer:162 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-09-11 21:47:33  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-09-11 21:47:33  [ main:27 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-09-11 21:47:33  [ main:28 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-09-11 21:47:33  [ main:28 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-09-11 21:47:33  [ main:29 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-09-11 21:47:34  [ main:172 ] - [ DEBUG ]  Opening JDBC Connection
+2018-09-11 21:47:34  [ main:615 ] - [ DEBUG ]  Created connection 410495873.
+2018-09-11 21:47:34  [ main:618 ] - [ DEBUG ]  ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1877ab81]
+2018-09-11 21:47:34  [ main:619 ] - [ DEBUG ]  ==>  Preparing: select * from d_user WHERE id=?; 
+2018-09-11 21:47:34  [ main:706 ] - [ DEBUG ]  ==> Parameters: 1(Integer)
+2018-09-11 21:47:34  [ main:771 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1877ab81]
+2018-09-11 21:47:34  [ main:772 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1877ab81]
+2018-09-11 21:47:34  [ main:773 ] - [ DEBUG ]  Returned connection 410495873 to pool.
+2018-09-11 21:47:58  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-09-11 21:47:58  [ main:24 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-09-11 21:47:58  [ main:25 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-09-11 21:47:58  [ main:25 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-09-11 21:47:58  [ main:26 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-09-11 21:47:58  [ main:139 ] - [ DEBUG ]  Opening JDBC Connection
+2018-09-11 21:47:59  [ main:549 ] - [ DEBUG ]  Created connection 410495873.
+2018-09-11 21:47:59  [ main:553 ] - [ DEBUG ]  ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1877ab81]
+2018-09-11 21:47:59  [ main:554 ] - [ DEBUG ]  ==>  Preparing: select * from d_user WHERE id=?; 
+2018-09-11 21:47:59  [ main:621 ] - [ DEBUG ]  ==> Parameters: 1(Integer)
+2018-09-11 21:47:59  [ main:676 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1877ab81]
+2018-09-11 21:47:59  [ main:677 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1877ab81]
+2018-09-11 21:47:59  [ main:678 ] - [ DEBUG ]  Returned connection 410495873 to pool.
+2018-09-11 21:56:17  [ main:1 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-09-11 21:56:17  [ main:35 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-09-11 21:56:17  [ main:36 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-09-11 21:56:17  [ main:37 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-09-11 21:56:17  [ main:37 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-09-11 21:56:17  [ main:167 ] - [ DEBUG ]  Opening JDBC Connection
+2018-09-11 21:56:17  [ main:608 ] - [ DEBUG ]  Created connection 1860513229.
+2018-09-11 21:56:17  [ main:614 ] - [ DEBUG ]  ooo Using Connection [com.mysql.jdbc.JDBC4Connection@6ee52dcd]
+2018-09-11 21:56:17  [ main:616 ] - [ DEBUG ]  ==>  Preparing: select * from d_user WHERE username like ?; 
+2018-09-11 21:56:17  [ main:707 ] - [ DEBUG ]  ==> Parameters: %wan%(String)
+2018-09-11 21:56:17  [ main:785 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6ee52dcd]
+2018-09-11 21:56:17  [ main:790 ] - [ DEBUG ]  Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@6ee52dcd]
+2018-09-11 21:56:17  [ main:791 ] - [ DEBUG ]  Returned connection 1860513229 to pool.
+2018-09-11 21:56:56  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-09-11 21:56:56  [ main:27 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-09-11 21:56:56  [ main:27 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-09-11 21:56:56  [ main:28 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-09-11 21:56:56  [ main:28 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-09-11 21:58:14  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-09-11 21:58:14  [ main:23 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-09-11 21:58:14  [ main:24 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-09-11 21:58:14  [ main:25 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-09-11 21:58:14  [ main:25 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-09-11 21:58:14  [ main:142 ] - [ DEBUG ]  Opening JDBC Connection
+2018-09-11 21:58:14  [ main:518 ] - [ DEBUG ]  Created connection 1860513229.
+2018-09-11 21:58:14  [ main:521 ] - [ DEBUG ]  ooo Using Connection [com.mysql.jdbc.JDBC4Connection@6ee52dcd]
+2018-09-11 21:58:14  [ main:522 ] - [ DEBUG ]  ==>  Preparing: select * from d_user WHERE username like "%?%"; 
+2018-09-11 21:59:01  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-09-11 21:59:01  [ main:32 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-09-11 21:59:01  [ main:32 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-09-11 21:59:01  [ main:32 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-09-11 21:59:01  [ main:33 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-09-11 21:59:01  [ main:175 ] - [ DEBUG ]  Opening JDBC Connection
+2018-09-11 21:59:01  [ main:537 ] - [ DEBUG ]  Created connection 1860513229.
+2018-09-11 21:59:01  [ main:540 ] - [ DEBUG ]  ooo Using Connection [com.mysql.jdbc.JDBC4Connection@6ee52dcd]
+2018-09-11 21:59:01  [ main:542 ] - [ DEBUG ]  ==>  Preparing: select * from d_user WHERE username like "%?%"; 
+2018-09-11 22:00:20  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-09-11 22:00:20  [ main:22 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-09-11 22:00:20  [ main:23 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-09-11 22:00:20  [ main:24 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-09-11 22:00:20  [ main:24 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.

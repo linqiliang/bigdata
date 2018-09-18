@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/aop
+                           http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+
+    <!--
+    <bean id="myBeanFactory" class="com.qiliang.c_inject.c_factory.MyBeanFactory"></bean>
+
+
+    <bean id="userService" factory-bean="myBeanFactory" factory-method="createService" scope="singleton"></bean>
+    -->
+    <bean id="userServiceID" class="com.qiliang.c_inject.c_factory.UserServiceImpl"></bean>
+    <bean id="myAspectID" class="com.qiliang.c_inject.c_factory.MyAspect"></bean>
+    <!--
+    <bean id="proxyServiceID" class="org.springframework.aop.framework.ProxyFactoryBean">
+        <property name="interfaces">
+            <array>
+                <value>
+                    com.qiliang.c_inject.c_factory.UserService
+                </value>
+            </array>
+        </property>
+        <property name="target" ref="userServiceID"></property>
+        <property name="interceptorNames" value="myAspectID"></property>
+        <property name="optimize" value="true"></property>
+    </bean>
+    -->
+    <aop:config>
+        <aop:pointcut expression="execution(* com.qiliang.c_inject.c_factory.UserServiceImpl.*())"
+                      id="myPointCut"></aop:pointcut>
+        <aop:advisor advice-ref="myAspectID" pointcut-ref="myPointCut"></aop:advisor>
+    </aop:config>
+</beans>

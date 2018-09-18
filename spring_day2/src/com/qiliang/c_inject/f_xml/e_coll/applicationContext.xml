@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <!--
+    <bean id="myBeanFactory" class="com.qiliang.c_inject.e_lifecycle.MyBeanFactory"></bean>
+         -->
+    <bean id="customerID" class="com.qiliang.c_inject.f_xml.e_coll.CollData">
+            <property name="arrayData">
+                <array>
+                    <value>DS</value>
+                    <value>DZD</value>
+                    <value>diaoshi</value>
+                    <value>diaozhongdiao</value>
+                </array>
+            </property>
+            <property name="listData">
+                <list>
+                <value>DG</value>
+                <value>yushongnan</value>
+                <value>liuxusong</value>
+                <value>zhuwenyi</value>
+                </list>
+            </property>
+        <property name="setData">
+            <set>
+                <value>tingfen</value>
+                <value>yushongnan</value>
+                <value>bozhi</value>
+                <value>guangxi</value>
+            </set>
+        </property>
+        <property name="mapData">
+            <map>
+                <entry key="jack" value="jieke"></entry>
+                <entry>
+                    <key><value>rose</value></key>
+                    <value>luoshi</value>
+                </entry>
+            </map>
+        </property>
+        <property name="propsData">
+            <props>
+                <prop key="高富帅">nao</prop>
+                <prop key="白富美">niao</prop>
+                <prop key="屌丝">nong</prop>
+            </props>
+        </property>
+    </bean>
+
+</beans>

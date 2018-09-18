@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--
+    <bean id="myBeanFactory" class="com.qiliang.c_inject.e_lifecycle.MyBeanFactory"></bean>
+         -->
+    <bean id="personID" class="com.qiliang.c_inject.f_xml.b_setter.Person">
+        <property name="pname" value="胭脂"></property>
+        <property name="companyAddr" ref="companyAddrID"></property>
+        <property name="homeAddr" ref="homeAddrID"></property>
+        <property name="page" value="50"></property>
+    </bean>
+    <bean id="homeAddrID" class="com.qiliang.c_inject.f_xml.b_setter.Address">
+        <property name="addr" value="湖南"></property>
+        <property name="tel" value="119"></property>
+    </bean>
+
+    <bean id="companyAddrID" class="com.qiliang.c_inject.f_xml.b_setter.Address">
+        <property name="addr" value="八宝山"></property>
+        <property name="tel" value="120"></property>
+    </bean>
+</beans>

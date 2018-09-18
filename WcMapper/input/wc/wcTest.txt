@@ -1,0 +1,11 @@
+bsondump               100% 6744KB  22.7MB/s   00:00
+mongo                  100%   37MB  26.6MB/s   00:01
+mongorestore           100%   11MB  35.1MB/s   00:00
+mongoreplay            100% 9104KB  37.8MB/s   00:00
+install_compass        100% 5792     4.5MB/s   00:00
+THIRD-PARTY-NOTICES    100%   56KB  19.6MB/s   00:00
+README                 100% 2195     2.0MB/s   00:00
+LICENSE-Community.txt  100% 2149     1.8MB/s   00:00
+MPL-2                  100%   16KB   9.6MB/s   00:00
+GNU-AGPL-3.0           100%   34KB  18.4MB/s   00:00
+mongodb-linux-x86_64-u 100%   80MB  35.2MB/s   00:02
